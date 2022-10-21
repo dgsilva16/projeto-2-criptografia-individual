@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Criptografia !</title>
+</head>
+
+<body>
+
+    <h1>Decodificador de Textos:</h1>
+
+    <label for="mensagem1">digite sua mensagem:</label>
+    <textarea cols="30" rows="3" name="bloco1" id="bloco1"></textarea>
+
+    <label for="escolhaMetodo">Escolha uma linguagem:</label><br>
+    <select name="cifras" id="cifras">
+        <option value="emBranco">Escolha</option>
+        <option value="cesar" id="cCesar">Cifra de César</option>
+        <option value="base" id="b64">Base64</option>
+    </select><br>
+
+    <div class="seletorCesar" style="display: none;">
+        <p>Incremento da Cifra de César - <br>Insira o número da posição</p>
+        <input type="number" name="posiçãoCesar" id="posiçãoCesar" min="1" max="26">
+    </div>
+
+    <div class="radioType">
+        <input type="radio" name="options" value="criptografar" id="criptografar">
+        <label for="criptografar" id="labelCriptografar">codificar</label>
+<br>
+        <input type="radio" name="options" value="descriptografar" id="descriptografar">
+        <label for="descriptografar" id="labelDescriptografar">decodificar</label>
+    </div>
+<br>
+    <div class="botaomsg">
+        <input type="submit" id="submit" value="Criptografar" style="display: flex;">
+        <input type="submit" id="submit" value="Descriptografar" style="display: none;">
+    </div>
+
+    <label for="resultado" id="resultado"> </label>
+    <textarea name="bloco2" id="bloco2" cols="30" rows="3"></textarea>
+
+
+    <footer>
+<br>
+        <p> <a href="https://www.github.com/dgsilva16" class="meulink">Douglas Rocha</a> - <a href="https://www.resilia.com.br/" class="meulink">Resilia Educação</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
